@@ -32,7 +32,7 @@ function App()
             <Link to="/cards">Cards (UnProtected)</Link>
           </li>
         </ul>
-        {isAuth ? (<><div className="ui message brown">You are logged in..</div><button className="ui btn btn-alert" onClick={logout}>Logout</button></>):(<><div className="ui message violet">You are logged out..</div><button className="ui button blue" onClick={login}>Login</button></>)}
+        {isAuth ? (<><div className="ui message brown"><Nav />You are logged in..</div><button className="ui btn btn-alert" onClick={logout}>Logout</button></>):(<><div className="ui message violet">You are logged out..</div><button className="ui button blue" onClick={login}>Login</button></>)}
         
         <Switch>
           <Route path="/" exact component={HomeComponent} />

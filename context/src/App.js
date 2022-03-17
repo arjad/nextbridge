@@ -6,7 +6,6 @@ const Fname=createContext();
 
 export default function App() 
 {
-
   return (
   <Fname.Provider value={{name:"ali"}}>
     <Compa/>
